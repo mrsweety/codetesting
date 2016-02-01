@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Test</title>
+	<link rel="stylesheet" href="button.css">
+</head>
+<body>
+
+  <div class="dropdown">
+  	<button onmouseover="toggleButton()" class="dropbtn" >DropDown</button>
+  	<div id="buttonDrop" class="dropdown-content">
+  		<a href="">link</a>
+  		<a href="">link</a>
+  		<a href="">link</a>
+  	</div>
+  </div>
+
+  <div class="dropdown">
+  	<button onmouseover="toggleButton2()" class="dropbtn" >DropDown</button>
+  	<div id="buttonDrop2" class="dropdown-content">
+  		<a href="">link</a>
+  		<a href="">link</a>
+  		<a href="">link</a>
+  	</div>
+  </div>
+
+
+
+
+<script>
+
+  function toggleButton() {
+  	document.getElementById("buttonDrop").classList.toggle("show");
+  }
+
+function toggleButton2() {
+  	document.getElementById("buttonDrop2").classList.toggle("show");
+  }
+	
+
+
+
+</script>
+
+</body>
+</html>
